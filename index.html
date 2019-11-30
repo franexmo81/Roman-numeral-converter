@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Roman numeral converter</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>
+      Roman numeral converter
+    </h1>
+    <label>
+      Enter a number:
+    </label>
+    <input onclick="clearOutput() " id="num" type="number" placeholder="0" />
+    <button onclick="convert()">
+      Convert
+    </button>
+    <span id="output1">
+    </span>
+    <span id="output2">
+    </span>
+    <h4 id="show-label" onclick="showDetailed()">
+      Show more...
+    </h4>
+    <h4 id="hide-label" onclick="hideDetailed()">
+      Show less...
+    </h4>
+    <div id="details">
+      <table>
+        <tr>
+          <td id="spaced-letters" colspan='4'></td>
+        </tr>
+        <tr>
+          <td id="letters">
+          </td>
+          <td id="values">
+          </td>
+          <td>
+          </td>
+          <td id="explanations">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
